@@ -1,6 +1,6 @@
-package com.ThymeleafPractice.thymeleafDemo.controller;
+package com.myStudyNotebook.notebook.controller;
 
-import com.ThymeleafPractice.thymeleafDemo.model.User;
+import com.myStudyNotebook.notebook.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -53,10 +53,10 @@ public class UserController {
 
     //http://localhost:8080/users
     @GetMapping("/users")
-    public String users(Model model){
-        User admin = new User("Admin",  "adnim@gmail.com", "ADMIN", "Male");
-        User ramesh = new User("Ramesh",  "ramesh@gmail.com", "USER", "Male");
-        User mila = new User("Mila",  "mila@gmail.com", "USER", "Feale");
+    public String users(Model model) {
+        User admin = new User("Admin", "adnim@gmail.com", "ADMIN", "Male");
+        User ramesh = new User("Ramesh", "ramesh@gmail.com", "USER", "Male");
+        User mila = new User("Mila", "mila@gmail.com", "USER", "Feale");
         List<User> users = new ArrayList<>();
         users.add(admin);
         users.add(ramesh);
@@ -67,10 +67,10 @@ public class UserController {
 
     //http://localhost:8080/if-unless
     @GetMapping("/if-unless")
-    public String ifUnless(Model model){
-        User admin = new User("Admin",  "adnim@gmail.com", "ADMIN", "Male");
-        User ramesh = new User("Ramesh",  "ramesh@gmail.com", "USER", "Male");
-        User mila = new User("Mila",  "mila@gmail.com", "USER", "Feale");
+    public String ifUnless(Model model) {
+        User admin = new User("Admin", "adnim@gmail.com", "ADMIN", "Male");
+        User ramesh = new User("Ramesh", "ramesh@gmail.com", "USER", "Male");
+        User mila = new User("Mila", "mila@gmail.com", "USER", "Feale");
         List<User> users = new ArrayList<>();
         users.add(admin);
         users.add(ramesh);
@@ -78,8 +78,16 @@ public class UserController {
         model.addAttribute("users", users);
         return "if-unless";
     }
-
-
-    //public String swithc
+    //http://localhost:8080/switch-case
+    @GetMapping("switch-case")
+    public String switchCase(Model model) {
+        User user = new User(
+                "Ramesh",
+                "ramesh@gmail.com",
+                "GUEST",
+                "Male");
+        model.addAttribute("user", user);
+        return "switch-case";
+    }
 
 }

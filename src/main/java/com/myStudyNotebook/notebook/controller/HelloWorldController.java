@@ -1,4 +1,4 @@
-package com.ThymeleafPractice.thymeleafDemo.controller;
+package com.myStudyNotebook.notebook.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

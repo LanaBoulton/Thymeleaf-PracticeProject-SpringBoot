@@ -1,4 +1,4 @@
-package com.ThymeleafPractice.thymeleafDemo;
+package com.myStudyNotebook.notebook;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
