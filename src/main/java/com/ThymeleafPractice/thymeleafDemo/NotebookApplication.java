@@ -1,4 +1,4 @@
-package com.myStudyNotebook.notebook;
+package com.ThymeleafPractice.thymeleafDemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

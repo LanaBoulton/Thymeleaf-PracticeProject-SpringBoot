@@ -1,6 +1,6 @@
-package com.myStudyNotebook.notebook.controller;
+package com.ThymeleafPractice.thymeleafDemo.controller;
 
-import com.myStudyNotebook.notebook.model.User;
+import com.ThymeleafPractice.thymeleafDemo.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,4 +1,4 @@
-package com.myStudyNotebook.notebook.model;
+package com.ThymeleafPractice.thymeleafDemo.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
